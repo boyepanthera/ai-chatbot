@@ -22,7 +22,7 @@ const runMigrate = async () => {
   const end = Date.now();
 
   console.log("✅ Migrations completed in", end - start, "ms");
-  pro cess.exit(0);
+  process.exit(0);
 };
 
 runMigrate().catch((err) => {
