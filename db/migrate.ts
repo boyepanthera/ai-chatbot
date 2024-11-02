@@ -9,7 +9,7 @@ config({
 
 const runMigrate = async () => {
   if (!process.env.POSTGRES_URL) {
-    throw new Error("POSTGRES_URL is not defined");
+    throw new Error("POSTGRES_URL is not defined!!!!!!");
   }
 
   const connection = postgres(process.env.POSTGRES_URL, { max: 1 });
@@ -22,7 +22,7 @@ const runMigrate = async () => {
   const end = Date.now();
 
   console.log("✅ Migrations completed in", end - start, "ms");
-  process.exit(0);
+  pro cess.exit(0);
 };
 
 runMigrate().catch((err) => {
